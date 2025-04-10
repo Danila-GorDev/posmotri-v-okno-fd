@@ -16,6 +16,7 @@
         <div class="result__video-container">
           <video src="" controls class="result__video" poster=""></video>
         </div>
+        <!-- ФОРМА -->
         <form class="search-form">
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
@@ -68,54 +69,52 @@
             Найти
           </button>
         </form>
+        <!-- /ФОРМА -->
       </section>
       <section class="content__details">
         <h1 class="title">
           <span class="content__accent">По-</span><br />смотри<br />в окно
-        </h1>
+        </h1>  
+        <!-- ТЕМПЛЕЙТЫ -->
         <div class="content__list-container">
           <ul class="content__list">
-            <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
+            <template class="preloader-template">
+              <div class="preloader">
+                <div class="preloader-chasing-squares">
+                  <div class="square"></div>
+                  <div class="square"></div>
+                  <div class="square"></div>
+                  <div class="square"></div>
+                </div>
+              </div>
+            </template>
+            <template class="cards-list-item-template">
+              <li class="content__list-item">
+                <a href="#0" class="content__card-link">
+                  <article class="content__video-card">
+                    <div class="content__video-card-description-container">
+                      <h2 class="content__video-card-title"></h2>
+                      <p class="content__video-card-description"></p>
+                    </div>
+                    <img src="" alt="" class="content__video-card-thumbnail" />
+                  </article>
+                </a>
+              </li>
+            </template>
+            <template class="more-button-template">
+              <button class="button more-button">Показать еще</button>
+            </template>
+        
+            <template class="error-template">
+              <div class="error">
+                <h2 class="error__title">Из этого города нет видео :(</h2>
+              </div>
+            </template>
           </ul>
         </div>
+        <!-- /ТЕМПЛЕЙТЫ -->
       </section>
     </main>
-
-    <!-- ТЕМПЛЕЙТЫ -->
-
-    <template class="preloader-template">
-      <div class="preloader">
-        <div class="preloader-chasing-squares">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-        </div>
-      </div>
-    </template>
-
-    <template class="cards-list-item-template">
-      <li class="content__list-item">
-        <a href="#0" class="content__card-link">
-          <article class="content__video-card">
-            <div class="content__video-card-description-container">
-              <h2 class="content__video-card-title"></h2>
-              <p class="content__video-card-description"></p>
-            </div>
-            <img src="" alt="" class="content__video-card-thumbnail" />
-          </article>
-        </a>
-      </li>
-    </template>
-    <template class="more-button-template">
-      <button class="button more-button">Показать еще</button>
-    </template>
-
-    <template class="error-template">
-      <div class="error">
-        <h2 class="error__title">Из этого города нет видео :(</h2>
-      </div>
-    </template>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
