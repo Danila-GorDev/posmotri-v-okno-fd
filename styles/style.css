@@ -81,7 +81,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .result__video {
@@ -126,8 +126,8 @@ object-position: center;
 }
 
 .content__list-item {
-  padding: 0 3px 0 3px;
-  width: 390px;
+  display: block;
+  padding: 0 0 0 3px;
 }
 
 .content__card-link {
@@ -191,7 +191,6 @@ object-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 54px;
 }
 
 .search-form__fieldset {
@@ -203,7 +202,7 @@ object-position: center;
 font-weight: 400;
 font-size: 18px;
 line-height: 100%;
-margin-bottom: 5px;
+margin-bottom: 6px;
 }
 
 .search-form__label {
@@ -211,7 +210,7 @@ margin-bottom: 5px;
   width: fit-content;
   align-items: center;
   cursor: pointer;
-  gap: 7px;
+  gap: 5px;
 }
 
 .search-form__label:focus {
@@ -228,6 +227,8 @@ margin-bottom: 5px;
   height: 27px;
   border: 0;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   background-color: transparent;
